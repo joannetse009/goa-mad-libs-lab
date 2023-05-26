@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        Mad Libs Lab - Modify the layout of a mad libs game, where the
+            player selects different types of words that will be used to
+            create a silly story!
+
+            Task #1: Let the player know what kind of word to fill in each blank.
+            Task #2: Let the player know they must fill in every blank. -->
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/mad_libs_description"
+                android:textColor="#FF001133"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Word #1: Foreign country -->
+            <TextView
+                android:id="@+id/foreign_country_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Foreign country" />
+
+            <EditText
+                android:id="@+id/foreign_country_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Think of a land far far away..."/>
+
+            <TextView
+                android:id="@+id/foreign_country_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter the name of a foreign country!"
+                android:visibility="invisible"/>
+
+            <!-- Word #2: Adverb -->
+            <TextView
+                android:id="@+id/adverb_1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Adverb" />
+
+            <EditText
+                android:id="@+id/adverb_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Word that describes a verb"/>
+
+            <TextView
+                android:id="@+id/adverb_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter an adverb!"
+                android:visibility="invisible"/>
+
+            <!-- Word #3: Adverb -->
+            <TextView
+                android:id="@+id/adverb_2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Adverb" />
+
+            <EditText
+                android:id="@+id/adverb_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Describes a verb, usually ends in '-ly'"/>
+
+            <TextView
+                android:id="@+id/adverb_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter an adverb!"
+                android:visibility="invisible"/>
+
+            <!-- Word #4: Part of the body -->
+            <TextView
+                android:id="@+id/body_part_1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Part of the body" />
+
+            <EditText
+                android:id="@+id/body_part_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Somewhere between your head and toes"/>
+
+            <TextView
+                android:id="@+id/body_part_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter the name of a body part!"
+                android:visibility="invisible"/>
+
+            <!-- Word #5: Verb -->
+            <TextView
+                android:id="@+id/verb_1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Verb" />
+
+            <EditText
+                android:id="@+id/verb_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="An action"/>
+
+            <TextView
+                android:id="@+id/verb_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter a verb!"
+                android:visibility="invisible"/>
+
+            <!-- Word #6: Adjective -->
+            <TextView
+                android:id="@+id/adjective_1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Adjective" />
+
+            <EditText
+                android:id="@+id/adjective_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Describes a noun"/>
+
+            <TextView
+                android:id="@+id/adjective_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter an adjective!"
+                android:visibility="invisible"/>
+
+            <!-- Word #7: Noun -->
+            <TextView
+                android:id="@+id/Noun_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Noun" />
+
+            <EditText
+                android:id="@+id/noun_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Person, place, or thing"/>
+
+            <TextView
+                android:id="@+id/noun_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter a noun!"
+                android:visibility="invisible"/>
+
+            <!-- Word #8: Verb -->
+            <TextView
+                android:id="@+id/verb_2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Verb" />
+
+            <EditText
+                android:id="@+id/verb_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Another action"/>
+
+            <TextView
+                android:id="@+id/verb_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter a verb!"
+                android:visibility="invisible"/>
+
+            <!-- Word #9: Adjective -->
+            <TextView
+                android:id="@+id/adjective_2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Adjective" />
+
+            <EditText
+                android:id="@+id/adjective_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Describes a person, place, or thing"/>
+
+            <TextView
+                android:id="@+id/adjective_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter an adjective!"
+                android:visibility="invisible"/>
+
+            <!-- Word #10: Part of the body -->
+            <TextView
+                android:id="@+id/body_part_2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Part of the body" />
+
+            <EditText
+                android:id="@+id/body_part_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="A limb? An internal organ?"/>
+
+            <TextView
+                android:id="@+id/body_part_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter the name of a body part!"
+                android:visibility="invisible"/>
+
+            <!-- Word #11: Verb -->
+            <TextView
+                android:id="@+id/verb_3_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:text="Verb" />
+
+            <EditText
+                android:id="@+id/verb_3_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="And another action"/>
+
+            <TextView
+                android:id="@+id/verb_3_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"
+                android:text="Please enter a verb!"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Done"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

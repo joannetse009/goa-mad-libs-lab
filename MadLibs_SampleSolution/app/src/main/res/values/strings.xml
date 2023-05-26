@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mad Libs</string>
+    <string name="mad_libs_description">Fill in the below form with the words that are called for. Your selected words will be used to create a silly story!</string>
+</resources>
