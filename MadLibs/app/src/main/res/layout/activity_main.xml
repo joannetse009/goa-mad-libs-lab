@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        Mad Libs Lab - Modify the layout of a mad libs game, where the
+            player selects different types of words that will be used to
+            create a silly story!
+
+            Task #1: Let the player know what kind of word to fill in each blank.
+            Task #2: Let the player know they must fill in every blank. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/mad_libs_description"
+                android:textColor="#FF001133"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Word #1: Foreign country -->
+            <EditText
+                android:id="@+id/foreign_country_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/foreign_country_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #2: Adverb -->
+            <EditText
+                android:id="@+id/adverb_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/adverb_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #3: Adverb -->
+            <EditText
+                android:id="@+id/adverb_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/adverb_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #4: Part of the body -->
+            <EditText
+                android:id="@+id/body_part_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/body_part_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #5: Verb -->
+            <EditText
+                android:id="@+id/verb_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/verb_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #6: Adjective -->
+            <EditText
+                android:id="@+id/adjective_1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/adjective_1_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #7: Noun -->
+            <EditText
+                android:id="@+id/noun_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/noun_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #8: Verb -->
+            <EditText
+                android:id="@+id/verb_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/verb_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #9: Adjective -->
+            <EditText
+                android:id="@+id/adjective_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/adjective_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #10: Part of the body -->
+            <EditText
+                android:id="@+id/body_part_2_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/body_part_2_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <!-- Word #11: Verb -->
+            <EditText
+                android:id="@+id/verb_3_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/verb_3_errmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textColor="#FFCC0000"/>
+
+            <Button
+                android:id="@+id/done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Done"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
